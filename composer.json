@@ -1,6 +1,6 @@
 {
     "name": "fourstacks/nova-repeatable-fields",
-    "description": "A Laravel Nova field.",
+    "description": "A Laravel Nova with image field.",
     "keywords": [
         "laravel",
         "nova"
