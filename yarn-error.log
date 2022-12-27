@@ -1,0 +1,56 @@
+Arguments: 
+  /home/vasilisk/.nvm/versions/node/v12.12.0/bin/node /home/vasilisk/.yarn/bin/yarn.js add libpng-dev
+
+PATH: 
+  /home/vasilisk/.nvm/versions/node/v12.12.0/bin:/home/vasilisk/.yarn/bin:/home/vasilisk/.config/yarn/global/node_modules/.bin:/home/vasilisk/.yarn/bin:/home/vasilisk/.config/yarn/global/node_modules/.bin:/home/vasilisk/.yarn/bin:/home/vasilisk/.config/yarn/global/node_modules/.bin:/home/vasilisk/.local/bin:/home/vasilisk/.yarn/bin:/home/vasilisk/.config/yarn/global/node_modules/.bin:/home/vasilisk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  12.12.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/libpng-dev: Not found
+      at Request.params.callback [as _callback] (/home/vasilisk/.yarn/lib/cli.js:66145:18)
+      at Request.self.callback (/home/vasilisk/.yarn/lib/cli.js:140890:22)
+      at Request.emit (events.js:210:5)
+      at Request.<anonymous> (/home/vasilisk/.yarn/lib/cli.js:141862:10)
+      at Request.emit (events.js:210:5)
+      at IncomingMessage.<anonymous> (/home/vasilisk/.yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (events.js:299:28)
+      at IncomingMessage.emit (events.js:215:7)
+      at endReadableNT (_stream_readable.js:1183:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+      "private": true,
+      "scripts": {
+          "dev": "npm run development",
+          "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+          "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+          "watch-poll": "npm run watch -- --watch-poll",
+          "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+          "prod": "npm run production",
+          "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+      },
+      "devDependencies": {
+          "cross-env": "^5.0.0",
+          "laravel-mix": "^1.0",
+          "laravel-nova": "^1.0"
+      },
+      "dependencies": {
+          "vue": "^2.5.0",
+          "vuedraggable": "^2.16.0"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
