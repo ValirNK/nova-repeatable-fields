@@ -2019,6 +2019,11 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
+cropperjs@^1.5.2:
+  version "1.5.13"
+  resolved "https://registry.yarnpkg.com/cropperjs/-/cropperjs-1.5.13.tgz#eb1682f01d17c70ed5244317091d745c9a249ef8"
+  integrity sha512-by7jKAo73y5/Do0K6sxdTKHgndY0NMjG2bEdgeJxycbcmHuCiMXqw8sxy5C5Y5WTOTcDGmbT7Sr5CgKOXR06OA==
+
 cross-env@^5.0.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-5.2.1.tgz#b2c76c1ca7add66dc874d11798466094f551b34d"
@@ -8811,6 +8816,13 @@ vue-loader@^13.0.5:
     vue-hot-reload-api "^2.2.0"
     vue-style-loader "^3.0.0"
     vue-template-es2015-compiler "^1.6.0"
+
+vue-slim-cropper@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/vue-slim-cropper/-/vue-slim-cropper-0.1.1.tgz#29fbea47a9d78feef08ac73c2644f8cd3e4880bc"
+  integrity sha512-rtWEegngYoi5qftdRa5DjoqHpzMK0HZ1JEoaFht5Cp98NSGu93GElX924sQyFMHujfpCK5j45Fqj2X1eQttSHg==
+  dependencies:
+    cropperjs "^1.5.2"
 
 vue-style-loader@^3.0.0:
   version "3.1.2"

@@ -15,7 +15,9 @@
         "laravel-nova": "^1.0"
     },
     "dependencies": {
+        "@yazan.alnughnugh/file-upload": "^1.0.10",
         "vue": "^2.5.0",
+        "vue-slim-cropper": "^0.1.1",
         "vuedraggable": "^2.16.0"
     }
 }
