@@ -13,7 +13,6 @@
         >
         <input 
           type="hidden" 
-          :id="subField.name" 
           :name="subField.name" 
           :value="previewImage"
           v-bind="subField.attributes"
