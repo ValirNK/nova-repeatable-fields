@@ -16,7 +16,7 @@
           :name="subField.name" 
           :value="previewImage"
           v-bind="subField.attributes"
-          @input="$emit('input', imageValue)"
+          @input="$emit('input', previewImage)"
           ref="uploadAvatar"
         >
         <!-- <input
@@ -54,9 +54,9 @@ export default {
             this.previewImage = e.target.result
           }
           reader.readAsDataURL(file[0])
-          this.imageValue = file[0]
+          this.imageValue = file[0].
           console.log(this.imageValue)
-          this.$refs.uploadAvatar.click()
+          this.$refs.uploadAvatar.input(this.previewImage)
           this.$emit('input', file[0])
         }
       }
