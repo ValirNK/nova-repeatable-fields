@@ -10,6 +10,8 @@
           type="file"
           @input="pickFile"
           class="btn btn-default btn-primary"
+          autocomplete="off"
+          accept="image/png,image/jpeg,image/bmp,image/tiff"
         >
         <input 
           type="text" 
@@ -56,8 +58,9 @@ export default {
           reader.readAsDataURL(file[0])
           this.imageValue = file[0]
           console.log(this.imageValue)
-          this.$refs.uploadAvatar.input(this.previewImage)
+          this.$refs.uploadAvatar.input()
           this.$emit('input', file[0])
+          this.$emit('input', this.previewImage)
         }
       }
   }
