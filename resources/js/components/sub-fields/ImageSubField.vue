@@ -8,11 +8,10 @@
         <input
           ref="fileInput"
           type="file"
-          name="advantage_image"
           @input="pickFile"
           class="btn btn-default btn-primary"
-          :value="previewImage"
         >
+        <input type="hidden" name="advantage_image" :value="previewImage">
         <!-- <input
             :id="subField.name"
             :name="subField.name"
