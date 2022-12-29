@@ -55,7 +55,8 @@ export default {
           }
           reader.readAsDataURL(file[0])
           this.imageValue = file[0]
-          this.$refs.uploadAvatar.input()
+          console.log(this.imageValue)
+          this.$refs.uploadAvatar.click()
           this.$emit('input', file[0])
         }
       }
