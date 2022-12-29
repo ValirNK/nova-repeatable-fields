@@ -11,7 +11,7 @@
           @input="pickFile"
           class="btn btn-default btn-primary"
         >
-        <input type="hidden" :id="subField.name" :name="subField.name" value="previewImage">
+        <input type="hidden" :id="subField.name" :name="subField.name" :value="previewImage">
         <!-- <input
             :id="subField.name"
             :name="subField.name"
@@ -33,6 +33,10 @@ export default {
         previewImage: null
       };
     },
+  mounted() {
+    console.log('This is Test value');
+    console.log(this.value);
+  },
   methods: {
       selectImage () {
           this.$refs.fileInput.click()
