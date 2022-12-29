@@ -16,7 +16,7 @@
           :name="subField.name" 
           :value="previewImage"
           v-bind="subField.attributes"
-          @input="$emit('input', previewImage)"
+          @input="$emit('input', $event.target.value)"
           ref="uploadAvatar"
         >
         <!-- <input
