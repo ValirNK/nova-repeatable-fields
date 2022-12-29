@@ -8,6 +8,8 @@
         <input
           ref="fileInput"
           type="file"
+          :id="subField.name"
+          :name="subField.name"
           @input="pickFile"
           class="btn btn-default btn-primary"
         >
