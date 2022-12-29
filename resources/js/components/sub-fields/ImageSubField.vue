@@ -53,7 +53,6 @@ export default {
     height: 50px;
     display: block;
     cursor: pointer;
-    margin: 0 auto 30px;
     background-size: cover;
     background-position: center center;
 }
