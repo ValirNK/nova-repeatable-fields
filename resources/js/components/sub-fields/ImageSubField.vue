@@ -8,7 +8,6 @@
         <input
           ref="fileInput"
           type="file"
-          :id="subField.name"
           name="advantage_image"
           @input="pickFile"
           class="btn btn-default btn-primary"
