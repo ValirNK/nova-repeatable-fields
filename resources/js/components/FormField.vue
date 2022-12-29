@@ -110,6 +110,7 @@
 			'rows': {
 				handler: function (newRows) {
 					this.value = JSON.stringify(newRows);
+					console.log(this.value);
 				},
 				deep: true
 			}
