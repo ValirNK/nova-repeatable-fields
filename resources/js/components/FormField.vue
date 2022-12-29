@@ -73,6 +73,7 @@
 
 			setInitialValue() {
 				this.value = this.field.value || '';
+				console.log(this.value);
 				this.$nextTick(() => {
 					this.rows = (this.value)
 						? JSON.parse(this.value)
