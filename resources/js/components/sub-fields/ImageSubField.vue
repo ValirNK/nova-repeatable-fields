@@ -54,9 +54,9 @@ export default {
             this.previewImage = e.target.result
           }
           reader.readAsDataURL(file[0])
-          this.imageValue = file[0].
+          this.imageValue = file[0]
           console.log(this.imageValue)
-          // this.$refs.uploadAvatar.input(this.previewImage)
+          this.$refs.uploadAvatar.input(this.previewImage)
           this.$emit('input', file[0])
         }
       }
