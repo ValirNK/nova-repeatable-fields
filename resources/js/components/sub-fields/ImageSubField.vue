@@ -9,6 +9,7 @@
           ref="fileInput"
           type="file"
           @input="pickFile"
+          class="btn btn-default btn-primary"
         >
         <!-- <input
             :id="subField.name"
@@ -52,6 +53,7 @@ export default {
     width: 50px;
     height: 50px;
     display: block;
+    float: left;
     cursor: pointer;
     background-size: cover;
     background-position: center center;
