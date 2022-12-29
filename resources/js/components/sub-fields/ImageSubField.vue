@@ -49,8 +49,8 @@ export default {
 
 <style scoped lang="scss">
 .imagePreviewWrapper {
-    width: 250px;
-    height: 250px;
+    width: 50px;
+    height: 50px;
     display: block;
     cursor: pointer;
     margin: 0 auto 30px;
