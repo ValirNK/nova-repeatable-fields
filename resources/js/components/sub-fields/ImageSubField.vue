@@ -16,7 +16,7 @@
           :name="subField.name" 
           :value="previewImage"
           v-bind="subField.attributes"
-          @input="$emit('input', $event.target.value)"
+          @change="$emit('input', imageValue)"
         >
         <!-- <input
             :id="subField.name"
@@ -36,7 +36,8 @@ export default {
   ],
   data() {
       return {
-        previewImage: null
+        previewImage: null,
+        imageValue: null
       };
     },
   methods: {
@@ -52,6 +53,7 @@ export default {
             this.previewImage = e.target.result
           }
           reader.readAsDataURL(file[0])
+          this.imageValue = file[0]
           this.$emit('input', file[0])
         }
       }
