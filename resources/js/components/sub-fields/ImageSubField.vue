@@ -11,7 +11,13 @@
           @input="pickFile"
           class="btn btn-default btn-primary"
         >
-        <input type="hidden" :id="subField.name" :name="subField.name" :value="previewImage">
+        <input 
+          type="hidden" 
+          :id="subField.name" 
+          :name="subField.name" 
+          :value="previewImage"
+          v-bind="subField.attributes"
+        >
         <!-- <input
             :id="subField.name"
             :name="subField.name"
