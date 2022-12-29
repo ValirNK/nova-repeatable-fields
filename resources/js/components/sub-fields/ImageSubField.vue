@@ -16,7 +16,8 @@
           :name="subField.name" 
           :value="previewImage"
           v-bind="subField.attributes"
-          @change="$emit('input', imageValue)"
+          @input="$emit('input', imageValue)"
+          ref="uploadAvatar"
         >
         <!-- <input
             :id="subField.name"
@@ -54,6 +55,7 @@ export default {
           }
           reader.readAsDataURL(file[0])
           this.imageValue = file[0]
+          $refs.uploadAvatar.input()
           this.$emit('input', file[0])
         }
       }
