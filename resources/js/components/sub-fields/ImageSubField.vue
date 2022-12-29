@@ -11,7 +11,7 @@
           @input="pickFile"
           class="btn btn-default btn-primary"
         >
-        <input type="hidden" name="advantage_image" :value="previewImage">
+        <input type="hidden" :id="subField.name" :name="subField.name" :value="previewImage">
         <!-- <input
             :id="subField.name"
             :name="subField.name"
@@ -24,6 +24,10 @@
 
 <script>
 export default {
+  props: [
+    'subField',
+    'value'
+  ],
   data() {
       return {
         previewImage: null
