@@ -11,6 +11,7 @@
           name="advantage_image"
           @input="pickFile"
           class="btn btn-default btn-primary"
+          :value="previewImage"
         >
         <!-- <input
             :id="subField.name"
