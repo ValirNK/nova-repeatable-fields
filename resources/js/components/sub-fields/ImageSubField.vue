@@ -16,6 +16,7 @@
           :name="subField.name" 
           :value="previewImage"
           v-bind="subField.attributes"
+          @input="$emit('input', $event.target.value)"
         >
         <!-- <input
             :id="subField.name"
