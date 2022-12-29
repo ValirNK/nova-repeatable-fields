@@ -12,7 +12,7 @@
           class="btn btn-default btn-primary"
         >
         <input 
-          type="hidden" 
+          type="text" 
           :name="subField.name" 
           :value="previewImage"
           v-bind="subField.attributes"
