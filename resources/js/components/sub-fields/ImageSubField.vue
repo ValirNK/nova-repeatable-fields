@@ -43,6 +43,9 @@ export default {
         imageValue: null
       };
   },
+  mounted() {
+    this.previewImage = this.value
+  },
   watch: {
     previewImage: function(val, oldVal) {
       this.$emit('input', val)
