@@ -10,7 +10,6 @@
           type="file"
           @input="pickFile"
           autocomplete="off"
-          id="FileInput"
           accept="image/png,image/jpeg,image/bmp,image/tiff"
         >
         <input 
@@ -19,6 +18,7 @@
           :value="previewImage"
           v-bind="subField.attributes"
           v-model="previewImage"
+          id="FileInput"
           ref="uploadAvatar"
         >
         <!-- <input
