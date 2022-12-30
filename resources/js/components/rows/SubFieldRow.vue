@@ -1,5 +1,5 @@
 <template>
-    <div class="row" :class="formLayout">
+    <div class="row" :class="formLayout" style="min-width: 600px;">
         <div class="js-row-move row-move">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="12" height="28" viewBox="0 0 12 28">
                 <title>arrows-v</title>

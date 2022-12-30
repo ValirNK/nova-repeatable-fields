@@ -17,7 +17,6 @@
           :name="subField.name" 
           :value="previewImage"
           v-bind="subField.attributes"
-          v-model="previewImage"
           id="FileInput"
           ref="uploadAvatar"
         >
