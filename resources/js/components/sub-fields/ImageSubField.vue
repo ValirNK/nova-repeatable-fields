@@ -75,13 +75,15 @@ export default {
 
 <style scoped lang="scss">
 .imagePreviewWrapper {
-    width: 50px;
-    height: 50px;
+    width: 85px;
+    height: 85px;
     display: block;
     float: left;
     cursor: pointer;
     background-size: cover;
     background-position: center center;
+    margin: 0 auto;
+    margin-top: 10px;
 }
 #FileInput{
   display: none;
@@ -103,10 +105,11 @@ export default {
   text-shadow: 1px 1px #fff;
   font-weight: 700;
   font-size: 10pt;
-  margin-top: 5px;
   width: 207px;
   word-wrap: break-word;
   text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 .custom-file-input:hover::before {
   border-color: black;
