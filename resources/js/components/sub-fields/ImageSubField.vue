@@ -91,7 +91,7 @@ export default {
 }
 .custom-file-input::before {
   content: 'Выберите изображение';
-  display: inline-block;
+  display: block;
   background: linear-gradient(top, #f9f9f9, #e3e3e3);
   border: 1px solid #999;
   border-radius: 3px;
@@ -104,6 +104,9 @@ export default {
   font-weight: 700;
   font-size: 10pt;
   margin-top: 5px;
+  width: 207px;
+  word-wrap: break-word;
+  text-align: center;
 }
 .custom-file-input:hover::before {
   border-color: black;
