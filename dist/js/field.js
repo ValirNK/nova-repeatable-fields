@@ -34118,7 +34118,7 @@ exports = module.exports = __webpack_require__(35)(false);
 
 
 // module
-exports.push([module.i, "\n.imagePreviewWrapper[data-v-c7210252] {\n  width: 50px;\n  height: 50px;\n  display: block;\n  float: left;\n  cursor: pointer;\n  background-size: cover;\n  background-position: center center;\n}\n#FileInput[data-v-c7210252] {\n  display: none;\n}\n", ""]);
+exports.push([module.i, "\n.imagePreviewWrapper[data-v-c7210252] {\n  width: 50px;\n  height: 50px;\n  display: block;\n  float: left;\n  cursor: pointer;\n  background-size: cover;\n  background-position: center center;\n}\n#FileInput[data-v-c7210252] {\n  display: none;\n}\n.custom-file-input[data-v-c7210252]::-webkit-file-upload-button {\n  visibility: hidden;\n}\n.custom-file-input[data-v-c7210252]::before {\n  content: 'Select some files';\n  display: inline-block;\n  background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e3e3e3));\n  background: linear-gradient(top, #f9f9f9, #e3e3e3);\n  border: 1px solid #999;\n  border-radius: 3px;\n  padding: 5px 8px;\n  outline: none;\n  white-space: nowrap;\n  -webkit-user-select: none;\n  cursor: pointer;\n  text-shadow: 1px 1px #fff;\n  font-weight: 700;\n  font-size: 10pt;\n}\n.custom-file-input[data-v-c7210252]:hover::before {\n  border-color: black;\n}\n.custom-file-input[data-v-c7210252]:active::before {\n  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);\n}\n", ""]);
 
 // exports
 
@@ -34504,6 +34504,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['subField', 'value'],
@@ -34562,6 +34563,7 @@ var render = function() {
     _vm._v(" "),
     _c("input", {
       ref: "fileInput",
+      staticClass: "custom-file-input",
       attrs: {
         type: "file",
         autocomplete: "off",
