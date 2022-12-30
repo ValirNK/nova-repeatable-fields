@@ -10,6 +10,7 @@
           type="file"
           @input="pickFile"
           autocomplete="off"
+          id="FileInput"
           accept="image/png,image/jpeg,image/bmp,image/tiff"
         >
         <input 
@@ -81,5 +82,8 @@ export default {
     cursor: pointer;
     background-size: cover;
     background-position: center center;
+}
+#FileInput{
+  display: none;
 }
 </style>
