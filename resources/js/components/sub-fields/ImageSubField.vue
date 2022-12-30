@@ -9,7 +9,6 @@
           ref="fileInput"
           type="file"
           @input="pickFile"
-          class="btn btn-default btn-primary"
           autocomplete="off"
           accept="image/png,image/jpeg,image/bmp,image/tiff"
         >
