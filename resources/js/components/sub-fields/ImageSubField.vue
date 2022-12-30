@@ -78,7 +78,6 @@ export default {
     width: 85px;
     height: 85px;
     display: block;
-    float: left;
     cursor: pointer;
     background-size: cover;
     background-position: center center;
