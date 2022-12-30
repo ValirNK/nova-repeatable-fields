@@ -90,7 +90,7 @@ export default {
   visibility: hidden;
 }
 .custom-file-input::before {
-  content: 'Select some files';
+  content: 'Выберите изображение';
   display: inline-block;
   background: linear-gradient(top, #f9f9f9, #e3e3e3);
   border: 1px solid #999;
@@ -103,6 +103,7 @@ export default {
   text-shadow: 1px 1px #fff;
   font-weight: 700;
   font-size: 10pt;
+  margin-top: 5px;
 }
 .custom-file-input:hover::before {
   border-color: black;
